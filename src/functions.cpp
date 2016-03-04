@@ -51,6 +51,19 @@ T logPow( T x, int n) // n - power , x - base
 
 //*****************************
 
+template <class T>
+T min3 (T a, T b, T c)
+{
+	return ( (a < b? a : b) < c ? (a < b? a : b) : c); 
+}
+
+template <class T>
+T max3 (T a, T b, T c)
+{
+	return ( (a > b? a : b) > c ? (a > b? a : b) : c); 
+}
+
+//*****************************
 //-------------------------------------------------------
 
 int main(int argc, char **argv)
